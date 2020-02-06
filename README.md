@@ -4,9 +4,9 @@ API PARA TESTE DE VAGA PGMAIS
 ## Como utilizar
 
 - Baixe o projeto para o diretorio desejado
-- acesse o diretorio raiz do projeto
-- rode o comando "npm install" para instalar as dependencias
-- rode o comando "node server" para subir o servidor
+- Acesse o diretorio raiz do projeto
+- Rode o comando "npm install" para instalar as dependencias
+- Rode o comando "node server" para subir o servidor
 
 ## Rotas:
 
@@ -101,6 +101,6 @@ querystring:
 
 # Notas:
 
-Foi pedido para enviar um arquivo csv real, porém senti alguma dificuldade e precisaria de mais tempo para pesquisar e aprender sobre esse assunto. Então fiz um modelo ficticio para salvar um nome de arquivo, salvando num banco de dados na nuvem.
+Foi pedido para enviar um arquivo csv real, porém senti alguma dificuldade e precisaria de mais tempo para pesquisar e aprender sobre esse assunto. Então fiz um modelo fictício para salvar um nome de arquivo, salvando num banco de dados na nuvem.
   
   
