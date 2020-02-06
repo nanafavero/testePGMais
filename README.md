@@ -1,6 +1,5 @@
-# api-exemple
-node api exemple
-
+# API TESTE PG
+API PARA TESTE DE VAGA PGMAIS
 
 ## Como utilizar
 
@@ -13,15 +12,18 @@ node api exemple
 
 POST: http://localhost:3001/api/user/files.
 
-Body: {
+Body:
+  ```json =
+{
 "filename" :"<NOME DO ARQUIVO .CSV DESEJADO",
 "name":"<NOME DESEJADO PARA USUARIO",
 "cep": "<CEP DE ENDEREÇO VALIDO>",
 "date":"<DATA DO DIA>"
 }
-  
+  ```
   ### Resposta esperada:
   200:
+  ```json =
   {
   "response": {
     "message": "usuario criado",
@@ -40,28 +42,35 @@ Body: {
     }
   }
 }
+```
 
 500 (se ja possuir um arquivo para o usuario):
+  ```json =
 {
   "message": "Já existe um arquivo com este nome"
 }
-
+```
 201( quando salvar outro filname.csv)
+  ```json =
 {
   "usuario": "usuario atualizado "
 }
+```
 
 ---------------
 ------------------------
   
-GET :  http://localhost:3001/api/user
-querystring{
+GET :  http://localhost:3001/api/user?name=<USUARIO>
+querystring:
+  ```json =
+{
  name: "<NOME DO USUARIO CRIADO>"
 }
   
-  
+```
   RESPONSE:
   200 - 
+  ```json=
   {
   "ok": [
     {
@@ -80,11 +89,14 @@ querystring{
     }
   ]
 }
+```
 
 200 (caso nao exista usuario) 
+```json=
 {
   "ok": []
 }
+```
 
 
 # Notas:
